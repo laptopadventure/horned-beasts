@@ -1,15 +1,37 @@
 html {
-  color: rgb(250, 235, 215);
-  background-size: 400% 400%;
   background: linear-gradient(-45deg, #f01212, #094d75);
-  animation: slow-background-movement 5s ease infinite;
-  height: 100vh;
+  height:fit-content;
 }
 
 .App {
   text-align: center;
+  color: rgb(250, 235, 215);
 }
 
-.App-link {
-  color: #61dafb;
+.beast-flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Cards */
+
+.card {
+  border: 4px solid black;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.376);
+  margin-bottom: 1rem;
+}
+
+.card-img-top {
+  border-bottom: 4px solid black;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.card-img-top:hover {
+  opacity: 0.5;
+}
+
+.card-body {
+  margin: auto 0.25rem;
 }
