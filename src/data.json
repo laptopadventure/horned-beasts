@@ -138,5 +138,26 @@
     "description": "Fan illustration of Smaug from 'The Hobbit'",
     "keyword": "dragon",
     "horns": 100
+  },
+  {
+    "image_url": "https://images.pexels.com/photos/1054650/pexels-photo-1054650.jpeg?cs=srgb&dl=pexels-harvey-sapir-1054650.jpg&fm=jpg",
+    "title": "Buffalo",
+    "description": "Probably a Water Buffalo, but I'm not confident enough to title it that.",
+    "keyword": "buffalo",
+    "horns": 2
+  },
+  {
+    "image_url": "https://images.pexels.com/photos/1564506/pexels-photo-1564506.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    "title": "Unicorn?",
+    "description": "...Are you doubting me?",
+    "keyword": "unicorn2",
+    "horns": 2
+  },
+  {
+    "image_url": "https://images.pexels.com/photos/52961/antelope-nature-flowers-meadow-52961.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    "title": "Antelope",
+    "description": "Elegant, aren't they?",
+    "keyword": "antelope",
+    "horns": 2
   }
 ]
