@@ -12,6 +12,7 @@ class Main extends React.Component {
         <div className="beast-flex">
           {HornedBeastData.map((beastData, index) => (
             <HornedBeast
+              key={index}
               title={beastData.title}
               description={beastData.description}
               imageUrl={beastData.image_url} />
