@@ -33,3 +33,15 @@ Estimate of time needed to complete: 5 minutes
 Start time: 9:06pm
 Finish time: 9:12pm
 Actual time needed to complete: 6 minutes.
+
+Number and name of feature: #5 Modal close inspections of horned beasts
+Estimate of time needed to complete: I forgot to estimate, very sorry.
+Start time: ~1pm
+Finish time: Before 2pm
+Actual time needed to complete: I have to guess around an hour.
+
+Number and name of feature: #6 Beast search and filter form
+Estimate of time needed to complete: I forgot to estimate, very sorry.
+Start time: ~2pm
+Finish time: 5:18pm
+Actual time needed to complete: 3 hours. There was some tough stuff in here and a few things I got caught on but recovered, and I'm INCREDIBLY happy with the final product.
