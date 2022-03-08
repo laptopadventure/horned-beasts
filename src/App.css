@@ -3,6 +3,8 @@
   text-align: center;
   color: rgb(250, 235, 215);
   background: linear-gradient(-45deg, #f01212, #094d75);
+  background-size: 110%;
+  min-height: 100vh;
 }
 
 .beast-flex {
@@ -80,11 +82,39 @@
 .filters {
   display:flex;
   justify-content: center;
+  align-items: center;
 }
 
 .filter {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10%;
-  margin: 0.5rem 1rem;
+  margin: 0.5rem 0.4rem;
   padding: 0.5rem;
+  cursor: default;
+}
+
+.remove-filter-icon {
+  transition: all 0.25s ease-in-out;
+}
+
+.filter:hover .remove-filter-icon {
+  opacity: 0.5;
+}
+
+.inline-ify {
+  display: inline;
+}
+
+.no-results {
+  margin: 4rem 0;
+  animation: slow-reveal 2s ease-out 0s 1;
+}
+
+@keyframes slow-reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
