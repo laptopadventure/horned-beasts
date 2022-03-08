@@ -3,6 +3,8 @@
   text-align: center;
   color: rgb(250, 235, 215);
   background: linear-gradient(-45deg, #f01212, #094d75);
+  background-size: 110%;
+  min-height: 100vh;
 }
 
 .beast-flex {
@@ -80,6 +82,7 @@
 .filters {
   display:flex;
   justify-content: center;
+  align-items: center;
 }
 
 .filter {
@@ -96,4 +99,22 @@
 
 .filter:hover .remove-filter-icon {
   opacity: 0.5;
+}
+
+.inline-ify {
+  display: inline;
+}
+
+.no-results {
+  margin: 4rem 0;
+  animation: slow-reveal 2s ease-out 0s 1;
+}
+
+@keyframes slow-reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

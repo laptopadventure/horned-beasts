@@ -28,12 +28,14 @@ class BeastSearcher extends React.Component {
           <Button variant="primary" type="submit">
             Submit
           </Button>
-          <Button onClick={() => resetBeastFilter()} variant="secondary">
+          <Button disabled={!this.props.filters.length} onClick={() => resetBeastFilter()} variant="warning">
             Remove filters
           </Button>
         </form>
-        {!!this.props.filters.length && (<h3>Currently Searching For:</h3>)}
-        <div className="filters">
+        <span className="filters">
+          {!!this.props.filters.length && (
+            <h3 className="inline-ify">Currently searching for</h3>
+          )}
           {this.props.filters.map((filter, index) => (
             <span
               className="filter"
@@ -42,11 +44,11 @@ class BeastSearcher extends React.Component {
               {filter}
               <FontAwesomeIcon
                 className="remove-filter-icon"
-                style={{"margin-left": "0.5rem"}}
+                style={{marginLeft: "0.5rem"}}
                 icon={faXmark} />
             </span>
           ))}
-        </div>
+        </span>
       </>
     )
   }
