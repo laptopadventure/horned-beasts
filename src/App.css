@@ -85,6 +85,15 @@
 .filter {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10%;
-  margin: 0.5rem 1rem;
+  margin: 0.5rem 0.4rem;
   padding: 0.5rem;
+  cursor: default;
+}
+
+.remove-filter-icon {
+  transition: all 0.25s ease-in-out;
+}
+
+.filter:hover .remove-filter-icon {
+  opacity: 0.5;
 }

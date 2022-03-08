@@ -9,7 +9,8 @@ class Main extends React.Component {
         <BeastSearcher
           filters={this.props.filters}
           filterBeasts={this.props.filterBeasts}
-          resetBeastFilter={this.props.resetBeastFilter} />
+          resetBeastFilter={this.props.resetBeastFilter}
+          removeBeastFilter={this.props.removeBeastFilter} />
         <div className="beast-flex">
           {this.props.displayedBeasts.map((beastData, index) => (
             <HornedBeast

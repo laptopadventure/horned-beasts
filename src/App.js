@@ -46,10 +46,36 @@ class App extends React.Component {
     })
   }
 
+  // removes all beast filters
   resetBeastFilter = () => {
     this.setState({
       displayedBeasts: HornedBeastData,
       filters: [],
+    })
+  }
+
+  removeBeastFilter = (target) => {
+    const newFilters = [...this.state.filters]
+    const index = newFilters.indexOf(target);
+    newFilters.splice(index, 1)
+    this.setState({
+      filters: newFilters
+    })
+    this.updateDisplayedBeasts(newFilters)
+  }
+
+  // We have to send through the updated filter list because state hasn't updated yet.
+  updateDisplayedBeasts = (newFilters) => {
+    let newDisplayedBeasts = HornedBeastData
+    for(let filter of newFilters) {
+      newDisplayedBeasts = newDisplayedBeasts.filter(beast => {
+        let sanitized = beast.title.toLowerCase()
+        let result = sanitized.includes(filter.toLowerCase())
+        return result
+      })
+    }
+    this.setState({
+      displayedBeasts: newDisplayedBeasts
     })
   }
 
@@ -61,6 +87,7 @@ class App extends React.Component {
           filters={this.state.filters}
           filterBeasts={this.filterBeasts}
           resetBeastFilter={this.resetBeastFilter}
+          removeBeastFilter={this.removeBeastFilter}
           displayedBeasts={this.state.displayedBeasts}
           showBeast={this.showBeast} />
         <SelectedBeast show={this.state.show} hideBeast={this.hideBeast} shownBeast={this.state.shownBeast} />

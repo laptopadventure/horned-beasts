@@ -3,9 +3,9 @@ import React from "react";
 class Footer extends React.Component {
   render() {
     return (
-      <h1>
+      <h2 style={{ marginBottom: 0, paddingBottom: 12 }}>
         Created by Hugo Thompson
-      </h1>
+      </h2>
     )
   }
 }
