@@ -14,7 +14,12 @@ class App extends React.Component {
       shownBeast: null,
       displayedBeasts: HornedBeastData,
       filters: [],
+      byHorns: null,
     }
+  }
+
+  setHornLevel = level => {
+    this.setState({byHorns: level})
   }
 
   showBeast = (shownBeast) => {
@@ -84,6 +89,8 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <Main
+          setHornLevel={this.setHornLevel}
+          byHorns={this.state.byHorns}
           filters={this.state.filters}
           filterBeasts={this.filterBeasts}
           resetBeastFilter={this.resetBeastFilter}
