@@ -45,3 +45,9 @@ Estimate of time needed to complete: I forgot to estimate, very sorry.
 Start time: ~2pm
 Finish time: 5:18pm
 Actual time needed to complete: 3 hours. There was some tough stuff in here and a few things I got caught on but recovered, and I'm INCREDIBLY happy with the final product.
+
+Number and name of feature: #7 Filter by horn count on the beasts
+Estimate of time needed to complete: 1 hour
+Start time: 6
+Finish time: 9:30
+Actual time needed to complete: 3 and a half hours, Honestly probably closer to my estimate though, I spent a lot of time just chatting with classmates.
